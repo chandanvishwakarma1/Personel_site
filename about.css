@@ -122,6 +122,51 @@ hr{
   display: flex;
   justify-content: center;
 }
+.piechart{
+  font-weight: 700;
+ height: 20.3vw;
+ width: 20vw;
+ font: size 1.9vmin;
+ display: grid;
+ position: relative;
+}
+.piea{
+  height: 17vw;
+  width: 20vw;
+  transition: all 1s ease;
+  border-radius: 0.6rem;
+  background-color:#cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1 ;
+}
+.piea:hover{
+  height: 20vw;
+  z-index: 6;
+}    
+.pieb{
+color: wheat;
+height: 3vw;
+width: 20vw;
+background-color:#111111;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 1s ease;
+border-radius: 0.6rem;
+position: absolute;
+bottom: 0;
+z-index: 1;
+}
+.pieb:hover{
+height: 20vw;
+z-index: 1;
+}
+.pieb:hover ~ .a{
+height: 0;
+opacity: 0;
+}
 .container1 .text1 {
   padding-top: 4.9rem;
   padding-right: 4.9rem;
@@ -311,7 +356,7 @@ hr{
     align-items: baseline;
     justify-self: center  ;
   }
-  h4{
+  h4{ 
     font-size:4vw;
   }
   .skill{
